@@ -24,5 +24,3 @@ with open('mycsv.csv', 'w', newline='') as f:
 
             for filesDictionary in files:
                 writer.writerow({'Repo': str(jsonFile.replace('.json', '')), 'file_name_column': str(filesDictionary['file_name']), 'line_column': str(filesDictionary['line']), 'expected_value_column': str(filesDictionary['expected_value']), 'actual_value_column': str(filesDictionary['actual_value']), 'severity_column': str(queryDictionary['severity'])})
-
-f.close()
