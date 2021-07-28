@@ -41,3 +41,4 @@ with open('mycsv.csv', 'w', newline='') as f:
     writer.writeheader()
     for rowValues in range(0, len(file_name_column)):
         writer.writerow({'Repo': repo[rowValues], 'file_name_column': file_name_column[rowValues], 'line_column': line_column[rowValues], 'expected_value_column': expected_value_column[rowValues], 'actual_value_column': actual_value_column[rowValues], 'severity_column': severity_column[rowValues]})
+f.close()
